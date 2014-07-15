@@ -730,6 +730,7 @@ mod tests {
         });
 
         assert!(a.accept().is_ok());
+        drop(a);
         assert!(a2.accept().is_ok());
     })
 
